@@ -26,10 +26,32 @@
 
 .lista-menu{
     display: none;
+    width: 60vw;
 }
 
 .container-botao:checked ~ .lista-menu{
     display: block;
     position: absolute;
     top: 100%;
+}
+
+.lista-menu-titulo , .lista-menu-item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu-titulo{
+    color: var(--laranja);
+    font-family: var(--font-principal);
+    font-weight: bold;
+}
+
+.lista-menu-link{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-family: var(--font-principal);
+    font-weight: 400;
 }
