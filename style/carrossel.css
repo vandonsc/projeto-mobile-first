@@ -20,3 +20,17 @@
 .swiper-slide img{
     width: 100%;
 }
+
+.card-descricao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+}
