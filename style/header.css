@@ -33,6 +33,7 @@
     display: block;
     position: absolute;
     top: 100%;
+    z-index: 10;
 }
 
 .lista-menu-titulo , .lista-menu-item{
