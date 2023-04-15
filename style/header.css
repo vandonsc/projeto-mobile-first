@@ -60,3 +60,62 @@
 .container-checkbox{
     display: none;
 }
+
+.container-titulo{
+    display: none;
+}
+
+.opcoes-item{
+    display: none;
+}
+
+.opcoes-link{
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+
+    .container-titulo , .container-titulo--negrito{
+        font-family: var(--font-secundaria);
+        font-size: 30px;
+    }
+
+    .container-titulo{
+        font-weight: 400;
+        display: block;
+    }
+
+    .container-titulo--negrito{
+        font-weight: 700;
+    }
+
+    .opcoes{
+        display: flex;
+    }
+
+    .opcoes-item{
+        padding: 0 1em;
+        text-transform: uppercase;
+        font-family: var(--font-principal);
+        font-size: 16px;
+        font-weight: 400;
+        display: block;
+        
+    }
+    
+    .opcoes-link{
+        color: var(--preto);
+        text-decoration: none;
+        display: block;
+        
+
+    }
+
+    .imagem-container{
+        display: none;
+    }
+
+    .cabecalho-menu-hamburguer{
+        display: none;
+    }
+}
