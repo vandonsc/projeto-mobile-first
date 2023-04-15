@@ -73,6 +73,10 @@
     display: none;
 }
 
+.opcoes-botao{
+    display: none;
+}
+
 @media screen and (min-width:1024px) {
 
     .container-titulo , .container-titulo--negrito{
