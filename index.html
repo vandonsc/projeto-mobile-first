@@ -102,24 +102,25 @@
             <!-- Slider main container -->
             <div class="swiper">
 
-             <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="livro de ApacheKafka"></div>
-            <div class="swiper-slide"><img src="img/Angular.svg" alt="livro sobre Angular"></div>
-            <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre Acessibilidade"></div>
-            <div class="swiper-slide"><img src="img/Portugol.svg" alt="livro sobre portugol"></div>
-            <div class="swiper-slide"><img src="img/ReactNative.svg" alt="livro sobre ReactNative"></div>
-            <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="ivro de MetricasAgeis"></div>
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="livro de ApacheKafka"></div>
+                <div class="swiper-slide"><img src="img/Angular.svg" alt="livro sobre Angular"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre Acessibilidade"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="livro sobre portugol"></div>
+                <div class="swiper-slide"><img src="img/ReactNative.svg" alt="livro sobre ReactNative"></div>
+                <div class="swiper-slide"><img src="img/MetricasAgeis.svg" alt="ivro de MetricasAgeis"></div>
+                
+                </div>
+                <!-- If we need pagination -->
             
-            </div>
-            <!-- If we need pagination -->
-           
-        
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>    
 
             <div class="card">
                 <div class="card-descricao">
@@ -140,7 +141,7 @@
             </div>
         </section>
 
-        <section class="card-secundario carrossel">
+        <section class="carrossel">
             <h2 class="carrossel-titulo">Mais vendidos</h2>
             <div class="swiper">
                 <!-- Additional required wrapper -->
@@ -149,12 +150,12 @@
     
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
-                    <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança em design da alura books"></div>
-                    <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre javascript assertivo da alurabooks"></div>
-                    <div class="swiper-slide"><img src="img/Portugol.svg"  alt="Livro sobre portugol"></div>
-                    <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
-                    <div class="swiper-slide"><img src="img/Angular.svg" alt="livro sobre angular 11"></div>
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança em design da alura books"></div>
+                <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre javascript assertivo da alurabooks"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg"  alt="Livro sobre portugol"></div>
+                <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="livro sobre acessibilidade"></div>
+                <div class="swiper-slide"><img src="img/Angular.svg" alt="livro sobre angular 11"></div>
                 </div>
     
                 <!-- If we need navigation buttons -->
@@ -164,7 +165,7 @@
 
            <div class="card">
                 <div class="card-descricao">
-                    <div class="descricao secundaria-desc">
+                    <div class="descricao">
                         <img class="imagem-estrela" src="img/Estrelinhas.svg" alt="icone 5 estrelas">
                         <h3 class="descricao-titulo-texto">Autora do Mês</h3>
                         <h2 class="descricao-titulo">Juliana Agarikov</h2>
@@ -236,11 +237,15 @@
 
     <script>
         const swiper = new Swiper('.swiper', {
-        spaceBetween: 10,
-        slidesPerView: 3,
-        pagination: {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
     </script>
